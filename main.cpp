@@ -12,7 +12,9 @@ int main() {
 
     std::cout << "Have: '" << m.get_common_manager("Mary", "Bob")->get_name() << "' resolve the issue" << std::endl;
 
-    /*
+    m.clear();
+    std::cout << "Cleared" << std::endl;
+
     m.insert("Frank", "Mary");
     m.insert("Mary", "Bob");
     m.insert("Mary", "Sam");
@@ -22,7 +24,6 @@ int main() {
 
     std::cout << "Finding supervisor to resolve issue..." << std::endl;
     std::cout << "Have: '" << m.get_common_manager("Katie", "Bob")->get_name() << "' resolve the issue" << std::endl;
-    */
 
     //std::cout << "*** FINDING ***" << std::endl;
     //std::cout << m.find("asdf") << std::endl;

@@ -21,6 +21,13 @@ class ManagerHierarchy {
             }
         } 
 
+        void clear() {
+            for (auto empl : this->employees) {
+                delete empl;
+            }
+            this->employees.clear();
+        }
+
         void insert(std::string manager, std::string employee) { 
             ManagerHierarchy *found = this->find(manager);
             if (found != NULL) {
